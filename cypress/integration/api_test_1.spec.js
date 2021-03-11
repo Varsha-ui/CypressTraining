@@ -44,55 +44,55 @@ describe('All API test', ()=>{
    
     })
 
-    // it('POST 1 ', () => {
-    //     cy.request({
-    //         'method' : 'POST',
-    //         'url' : '/users',
-    //         body: {
-    //             "name": "Raghav",
-    //             "job": "Teacher"
-    //         }
+    it('POST 1 ', () => {
+        cy.request({
+            'method' : 'POST',
+            'url' : '/users',
+            body: {
+                "name": "Raghav",
+                "job": "Teacher"
+            }
 
-    //     })
-    // })
+        })
+    })
 
 
-    // it('PUT 1', () => {
+    it('PUT 1', () => {
 
  
 
-    //     cy.request({
-    //         'method' : 'PUT',
-    //         'url' : '/users/2',
-    //         body: {
-    //             "name": "John",
-    //             "job": "Engineer"
-    //         }
-    //     })
-    //     .then((response) => {
-    //         expect(response).to.have.property('status', 200);
-    //         expect(response.status).to.equal(200);
-    //         expect(response.body).not.to.be.null;
-    //     })
-    // })
+        cy.request({
+            'method' : 'PUT',
+            'url' : '/users/2',
+            body: {
+                "name": "John",
+                "job": "Engineer"
+            }
+        })
+        .then((response) => {
+            expect(response).to.have.property('status', 200);
+            expect(response.status).to.equal(200);
+            expect(response.body).not.to.be.null;
+        })
+    })
 
         
 
 
-    // it('DELETE 1', () =>{
+    it('DELETE 1', () =>{
 
-    //     cy.request({
-    //         'method' : 'DELETE',
-    //         'url': 'users/2',
+        cy.request({
+            'method' : 'DELETE',
+            'url': 'users/2',
            
-    //     })
-    //     .then((response) => {
-    //         expect(response).to.have.property('status', 200);
-    //         expect(response.status).to.equal(200);
-    //         expect(response.body).not.be.null;
+        })
+        .then((response) => {
+            expect(response).to.have.property('status', 204);
+            expect(response.status).to.equal(204);
+            expect(response.body).not.be.null;
 
-    //     })
-    // })
+        })
+    })
     
 })
 
