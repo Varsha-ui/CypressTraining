@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 0,
+    "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-03-04T05:08:37.605Z",
-    "end": "2021-03-04T05:08:38.026Z",
-    "duration": 421,
+    "failures": 1,
+    "start": "2021-03-10T15:51:27.577Z",
+    "end": "2021-03-10T15:51:28.100Z",
+    "duration": 523,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,42 +18,65 @@
   },
   "results": [
     {
-      "uuid": "c8bd6b1d-5aad-405a-a87f-99e200b14d63",
+      "uuid": "722d388a-d297-4a50-bb1a-a93afb4cca84",
       "title": "",
-      "fullFile": "cypress\\integration\\fileupload_download.ts",
-      "file": "cypress\\integration\\fileupload_download.ts",
+      "fullFile": "cypress\\integration\\api\\api_Activity1.spec.ts",
+      "file": "cypress\\integration\\api\\api_Activity1.spec.ts",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [
+      "tests": [],
+      "suites": [
         {
-          "title": "File download demo",
-          "fullTitle": "File download demo",
-          "timedOut": null,
-          "duration": 370,
-          "state": "passed",
-          "speed": "slow",
-          "pass": true,
-          "fail": false,
-          "pending": false,
-          "context": null,
-          "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'example.jpg');",
-          "err": {},
-          "uuid": "fb88a8ac-49ef-4bc4-be1a-1ef9a8375d5a",
-          "parentUUID": "c8bd6b1d-5aad-405a-a87f-99e200b14d63",
-          "isHook": false,
-          "skipped": false
+          "uuid": "54117408-ed89-4828-ad77-e26d6dbe5f2c",
+          "title": "All API tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "API to Get Url",
+              "fullTitle": "All API tests API to Get Url",
+              "timedOut": null,
+              "duration": 444,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\api\\\\api_Activity1.spec.ts\\\\All API tests -- API to Get Url (failed).png\"\n}",
+              "code": "cy.request('GET');",
+              "err": {
+                "message": "CypressError: `cy.request()` must be provided a fully qualified `url` - one that begins with `http`. By default `cy.request()` will use either the current window's origin or the `baseUrl` in `cypress.json`. Neither of those values were present.\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` must be provided a fully qualified `url` - one that begins with `http`. By default `cy.request()` will use either the current window's origin or the `baseUrl` in `cypress.json`. Neither of those values were present.\n\nhttps://on.cypress.io/request\n    at Context.request (http://localhost:52232/__cypress/runner/cypress_runner.js:160112:19)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:52232/__cypress/tests?p=cypress\\integration\\api\\api_Activity1.spec.ts:100:12)",
+                "diff": null
+              },
+              "uuid": "90c2eede-1cb2-4110-81e7-3f18302ecf83",
+              "parentUUID": "54117408-ed89-4828-ad77-e26d6dbe5f2c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "90c2eede-1cb2-4110-81e7-3f18302ecf83"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 444,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
         }
       ],
-      "suites": [],
-      "passes": [
-        "fb88a8ac-49ef-4bc4-be1a-1ef9a8375d5a"
-      ],
+      "passes": [],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 370,
+      "duration": 0,
       "root": true,
-      "rootEmpty": false,
+      "rootEmpty": true,
       "_timeout": 2000
     }
   ],

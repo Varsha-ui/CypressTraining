@@ -1,3 +1,5 @@
+///<reference types="cypress"/>
+
 import { LoginPage } from '../pages/login_page'
 
 before(function(){
@@ -6,15 +8,14 @@ before(function(){
 
 describe('All login tests', function () {
 
+    //creating the object of LoginPage
     let loginPage = new LoginPage()
 
     beforeEach(function(){
         loginPage.navigate('https://trytestingthis.netlify.app/')
     })
 
-    it.only('login test - valid credentials', () => {
-
-        //creating the object of LoginPage
+    it('login test - valid credentials', () => {
     
         loginPage.loginWithValidCredentials('test', 'test')
 
@@ -24,16 +25,11 @@ describe('All login tests', function () {
 
         loginPage.loginWithInvalidCredentials('abc', '123')
 
-        // loginPage.enterUsername('test')
-        // loginPage.enterPassword('test')
-        // loginPage.clickLogin()
+    })
 
+    it('login test - valid custom commands', () => {
 
-        // cy.visit('https://trytestingthis.netlify.app/')
-        // cy.get('#uname').type('test')
-        // cy.get('#pwd').type('test')
-        // cy.get('[type="submit"]').click()
-        // cy.contains('Login Successful')
+        loginPage.loginWithValidCustomCommands('test', 'test')
 
     })
 })

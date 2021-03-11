@@ -23,6 +23,6 @@ import 'cypress-mochawesome-reporter/register'
 // require('./commands')
 
 
-// beforeEach(function(){
-//     cy.log("I am in support file")
-// })
+beforeEach(function(){
+    cy.log("I am in support file")
+})

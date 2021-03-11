@@ -10,7 +10,7 @@ export class LoginPage {
         cy.get(this.loginPage_username).type(username)
         cy.get(this.loginPage_password).type(password)
         cy.get(this.loginPage_loginButton).click()
-        cy.contains('Login Successful')
+        cy.contains('Login Successful').should('contain', 'Login Successful')
         cy.clickLink('here')
     }
     
@@ -23,6 +23,13 @@ export class LoginPage {
         cy.on('window:alert',(txt)=>{
             expect(txt).to.be.equal('Wrong Credentials! Try again!')
         })
+    }
+
+    loginWithValidCustomCommands(username:string, password:string)
+    {
+        cy.login(username, password)
+        cy.contains('Login Successful').should('contain', 'Login Successful')
+        cy.clickLink('here')
     }
     navigate(url: string) {
         cy.visit(url)
