@@ -10,7 +10,7 @@ export class ResponseData {
 
     getProperty() : string
     {
-        let page : string = '2'
+        let page : string = '\'page\', 2'
         return page;
     }
 
@@ -19,7 +19,13 @@ export class ResponseData {
         let length : number = 6
         return length;
     }
+    getEmail() : string
+    {
+        let email : string = "michael.lawson@reqres.in"
+        return email;
+    }
 
+    
 }
 
 

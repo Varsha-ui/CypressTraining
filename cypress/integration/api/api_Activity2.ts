@@ -10,8 +10,9 @@ describe('API to parse the response', ()=>{
         cy.request('GET')
         .then((response) => {
             expect(response.status).to.equal(data.getStatus());
-            expect(response.body).to.have.property(data.getProperty());
+            expect(response.body.page).to.equal(2);
             expect(response.body.data).to.have.length(data.getLength());
+            expect(response.body.data[0].email).to.equal(data.getEmail());
             
         })
     })
