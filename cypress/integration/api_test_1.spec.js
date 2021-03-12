@@ -2,7 +2,7 @@
 
 describe('All API test', ()=>{
     
-    Cypress.config('baseUrl', 'https://reqres.in/api')
+    //Cypress.config('baseUrl', 'https://reqres.in/api')
     it('GET 1', () => {
 
         cy.request('GET', '/users?page=2')

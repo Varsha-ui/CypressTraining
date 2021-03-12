@@ -1,6 +1,6 @@
 export class LoginPage {
 
-    loginPage_username= '#uname'
+    loginPage_username= '#unamed'
     loginPage_password='#pwd'
     loginPage_loginButton='[type="submit"]'
 

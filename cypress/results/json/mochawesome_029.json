@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-11T08:56:14.572Z",
+    "end": "2021-03-11T08:56:18.071Z",
+    "duration": 3499,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aebbbb12-a68b-430c-b29d-c0e06e9cb8e7",
+      "title": "",
+      "fullFile": "cypress\\integration\\recordingDemo.js",
+      "file": "cypress\\integration\\recordingDemo.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4978dd5b-786a-4456-b3e8-c45353f905ed",
+          "title": "Recorded tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My first recorded test",
+              "fullTitle": "Recorded tests My first recorded test",
+              "timedOut": null,
+              "duration": 91,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "226353fb-2636-43ac-ab29-01658db322d4",
+              "parentUUID": "4978dd5b-786a-4456-b3e8-c45353f905ed",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "My recorded test",
+              "fullTitle": "Recorded tests My recorded test",
+              "timedOut": null,
+              "duration": 1204,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "/* ==== Generated with Cypress Studio ==== */\ncy.visit('https://trytestingthis.netlify.app/');\ncy.get('#fname').type('test');\ncy.get('#lname').type('test'); //cy.get('.main').click();\ncy.get('[type=\"submit\"]').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "202bff53-a299-43d6-963d-c6bcf1398f0f",
+              "parentUUID": "4978dd5b-786a-4456-b3e8-c45353f905ed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "226353fb-2636-43ac-ab29-01658db322d4",
+            "202bff53-a299-43d6-963d-c6bcf1398f0f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1295,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-03-11T08:43:22.083Z",
+    "end": "2021-03-11T08:43:22.916Z",
+    "duration": 833,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0c081c12-0055-46da-814e-a00126298a5c",
+      "title": "",
+      "fullFile": "cypress\\integration\\api\\api_Activity1.spec.ts",
+      "file": "cypress\\integration\\api\\api_Activity1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a773e4a7-b52d-4dcc-bc15-e0ca0d4b2b93",
+          "title": "All API tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "API to Get Url",
+              "fullTitle": "All API tests API to Get Url",
+              "timedOut": null,
+              "duration": 555,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\api\\\\api_Activity1.spec.ts\\\\All API tests -- API to Get Url (failed).png\"\n}",
+              "code": "cy.request('GET');",
+              "err": {
+                "message": "CypressError: `cy.request()` must be provided a fully qualified `url` - one that begins with `http`. By default `cy.request()` will use either the current window's origin or the `baseUrl` in `cypress.json`. Neither of those values were present.\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` must be provided a fully qualified `url` - one that begins with `http`. By default `cy.request()` will use either the current window's origin or the `baseUrl` in `cypress.json`. Neither of those values were present.\n\nhttps://on.cypress.io/request\n    at Context.request (http://localhost:60824/__cypress/runner/cypress_runner.js:160112:19)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:60824/__cypress/tests?p=cypress\\integration\\api\\api_Activity1.spec.ts:100:12)",
+                "diff": null
+              },
+              "uuid": "efac4f73-e250-4fde-8d78-26cc5aff03b8",
+              "parentUUID": "a773e4a7-b52d-4dcc-bc15-e0ca0d4b2b93",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "efac4f73-e250-4fde-8d78-26cc5aff03b8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 555,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
